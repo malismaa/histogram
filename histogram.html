@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASN1</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/histogram.css">
+</head>
+<body>
+
+<h1>Histogram Generator</h1>
+    <div class="main">
+
+    
+        <div class="LowerBoundArea">
+            <h2>Lower bounds</h2>
+            <form id="LowerBoundsList">
+                <div class="LowerBound">
+                    <label>Max</label>
+                    <input type="number" value="100.00" oninput = "dynamic_changeMAX()" id="Max_grade">
+                </div>
+                <div class="LowerBound">
+                    <label>A+</label>
+                    <input type="number" value="95.00" oninput = "dynamic_changeAP()" id="Apls_grade">
+                </div>
+                <div class="LowerBound">
+                    <label>A</label>
+                    <input type="number" value="90.00" oninput = "dynamic_changeA()" id="A_grade">
+                </div>
+                <div class="LowerBound">
+                    <label>A-</label>
+                    <input type="number" value="85.00" oninput = "dynamic_changeAM()" id="Amin_grade">
+                </div>
+                <div class="LowerBound">
+                    <label>B+</label>
+                    <input type="number" value="80.00" oninput = "dynamic_changeBP()" id="Bpls_grade">
+                </div>
+                <div class="LowerBound">
+                    <label>B</label>
+                    <input type="number" value="75.00" oninput = "dynamic_changeB()" id="B_grade">
+                </div>
+                <div class="LowerBound">
+                    <label>B-</label>
+                    <input type="number" value="70.00" oninput = "dynamic_changeBM()" id="Bmin_grade">
+                </div>
+                <div class="LowerBound">
+                    <label>C+</label>
+                    <input type="number" value="65.00" oninput = "dynamic_changeCP()" id="Cpls_grade">
+                </div>
+                <div class="LowerBound">
+                    <label>C</label>
+                    <input type="number" value="60.00" oninput = "dynamic_changeC()" id="C_grade">
+                </div>
+                <div class="LowerBound">
+                    <label>C-</label>
+                    <input type="number" value="55.00" oninput = "dynamic_changeCM()" id="Cmin_grade">
+                </div>
+                <div class="LowerBound">
+                    <label>D</label>
+                    <input type="number" value="50.00" oninput = "dynamic_changeD()" id="D_grade">
+                </div>
+                <div class="LowerBound">
+                    <label>F</label>
+                    <input type="number" value="0.00" oninput= "dynamic_changeF()" id="F_grade">
+                </div>
+            
+            </form>
+        </div>
+
+        <div class="Histogram">
+            <h2>Histogram</h2>
+            <div>
+              <div class="histogram-row">
+                <div class="histogram-grade" id="Ap">A+</div>
+                <div class="histogram-student-count" id="Ap0"></div>
+              </div>
+              <div class="histogram-row">
+                <div class="histogram-grade" id="A">A</div>
+                <div class="histogram-student-count" id="A0"></div>
+              </div>
+              <div class="histogram-row">
+                <div class="histogram-grade" id="Am">A-</div>
+                <div class="histogram-student-count" id="Am0"></div>
+              </div>
+              <div class="histogram-row">
+                <div class="histogram-grade" id="Bp">B+</div>
+                <div class="histogram-student-count" id="Bp0"></div>
+              </div>
+              <div class="histogram-row">
+                <div class="histogram-grade" id="B">B</div>
+                <div class="histogram-student-count" id="B0"></div>
+              </div>
+              <div class="histogram-row">
+                <div class="histogram-grade" id="Bm">B-</div>
+                <div class="histogram-student-count" id="Bm0"></div>
+              </div>
+              <div class="histogram-row">
+                <div class="histogram-grade" id="Cp">C+</div>
+                <div class="histogram-student-count" id="Cp0"></div>
+              </div>
+              <div class="histogram-row">
+                <div class="histogram-grade" id="C">C</div>
+                <div class="histogram-student-count" id="C0"></div>
+              </div>
+              <div class="histogram-row">
+                <div class="histogram-grade" id="Cm">C-</div>
+                <div class="histogram-student-count" id="Cm0"></div>
+              </div>
+              <div class="histogram-row">
+                <div class="histogram-grade" id="D">D</div>
+                <div class="histogram-student-count" id="D0"></div>
+              </div>
+              <div class="histogram-row">
+                <div class="histogram-grade" id="F">F</div>
+                <div class="histogram-student-count" id="F0"></div>
+              </div>
+
+
+            </div>
+        </div>
+
+       
+    
+    
+        <div class="NewGrade">
+            <label for="New Grade">New Grade:</label>
+            <input type="number" id="grade" >
+            <input id="NG-btn" type="submit" value="Submit">   
+            <div id="msg"></div> 
+        </div>
+        
+         
+    </div>
+        
+    
+    
+    <script src="calculate.js"></script>
+</body>
+</html>
+
+

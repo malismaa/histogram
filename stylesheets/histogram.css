@@ -1,0 +1,230 @@
+body{
+    background-color: rgb(255,255,255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    line-height: 2em;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    margin: 0;
+}
+
+.main{
+    height: calc(100vh - 70px);
+    border: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "lb hist" "lb n-g";
+    grid-template-rows: repeat(2,1fr);
+}
+
+.LowerBoundArea {
+    background-color: rgb(242, 242, 242);
+    grid-area: lb;
+    padding: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    
+}
+
+#msg{
+    padding-top: 5%;
+    padding-left: 1%;
+    padding-right: 20%;
+    align-content: center;
+}
+
+
+.histogram-row {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+  }
+  
+  .histogram-grade {
+    flex: 1;
+  }
+  
+  .histogram-student-count {
+    flex: 1;
+  }
+
+.Histogram {
+    background-color: rgb(242, 242, 242);
+    grid-area: hist;
+    padding: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+
+}
+
+  
+.NewGrade{
+    background-color: rgb(242, 242, 242);
+    grid-area: n-g;
+    padding: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+
+h2{
+    color: rgb(197, 46, 51);
+    font-weight:bolder;
+}
+
+#LowerBoundsList {
+    box-sizing:border-box;
+    line-height: 3.3em;
+    padding-left: 2%;
+}
+
+#LowerBoundsList label{
+    margin-left: 3%;
+    margin-right: 5%;
+    box-sizing:border-box;
+}
+
+.LowerBound input{
+    margin-right: 40%;
+    float:right;
+    width: 5em;
+    height: 2.2em;
+    box-sizing:border-box; 
+    position:absolute;
+    left: 12%;
+}
+
+
+
+.Histogram h2{
+    margin-bottom: 0;
+}
+
+.Histogram ul{
+    list-style: none;
+    padding-left: 3%;
+    grid-area: list;
+    grid-row: 2/13;
+
+
+}  
+
+
+
+.Histogram li{
+    padding: 1em;
+    line-height: 0.2em;
+    box-sizing:border-box;
+}  
+
+
+
+.NewGrade #grade{
+    width: 20%;
+    height: 2.2em;
+}
+
+.NewGrade label{
+    padding-left: 1%;
+
+}
+
+
+
+.Histogram #Ap0{
+    float: right;
+    
+    grid-area: hist0;
+    grid-row: 2/3;
+    grid-column: 2/5;
+}
+
+.Histogram #A0{
+    float: right;
+    
+    grid-area: hist0;
+    grid-row: 3/4;
+    grid-column: 2/5;
+} 
+
+
+.Histogram #Am0{
+    float: right;
+    
+    grid-area: hist0;
+    grid-row: 4/5;
+    grid-column: 2/5;
+} 
+
+.Histogram #Bp0{
+    float: right;
+    
+    grid-area: hist0;
+    grid-row: 5/6;
+    grid-column: 2/5;
+} 
+
+
+.Histogram #B0{
+    float: right;
+    
+    grid-area: hist0;
+    grid-row: 6/7;
+    grid-column: 2/5;
+} 
+
+
+.Histogram #Bm0{
+    float: right;
+    grid-area: hist0;
+    grid-row: 7/8;
+    grid-column: 2/5;
+} 
+
+.Histogram #Cp0{
+    float: right;
+    grid-area: hist0;
+    grid-row: 8/9;
+    grid-column: 2/5;
+} 
+
+
+.Histogram #C0{
+    float: right;
+    grid-area: hist0;
+    grid-row: 9/10;
+    grid-column: 2/5;
+} 
+
+
+.Histogram #Cm0{
+    float: right;
+    grid-area: hist0;
+    grid-row: 10/11;
+    grid-column: 2/5;
+} 
+
+.Histogram #D0{
+    float: right;
+    grid-area: hist0;
+    grid-row: 11/12;
+    grid-column: 2/5;
+} 
+
+
+.Histogram #F0{
+    float: right;
+    grid-area: hist0;
+    grid-row: 12/13;
+    grid-column: 2/5;
+} 
+
